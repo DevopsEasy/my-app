@@ -1,0 +1,12 @@
+pipeline {
+    agent{
+        label 'linuxagent'
+    }
+    stages {
+      stage('Demo') {
+          steps {
+              echo "Jenkins master slave demo"
+          }
+      }   
+    }
+}
