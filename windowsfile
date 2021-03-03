@@ -1,0 +1,12 @@
+pipeline {
+    agent{
+        label 'windows'
+    }
+    stages {
+      stage('Demo') {
+          steps {
+              bat "echo Jenkins master slave demo"
+          }
+      }   
+    }
+}
